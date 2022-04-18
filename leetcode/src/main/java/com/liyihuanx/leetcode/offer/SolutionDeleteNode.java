@@ -13,29 +13,25 @@ class SolutionDeleteNode {
 	public ListNode deleteNode(ListNode head, int val) {
 		// 4,5,1,9
 
-//		if (head.val == val) {
-//			return head.next;
-//		}
-//		ListNode temp = new ListNode(0);
-//		ListNode cur = head.next;
-//
-//		while (cur.next != null) {
-//			if (cur.val != val) {
-//				temp = cur;
-//				cur = cur.next;
-//			}
-//		}
+		if (head.val == val) {
+			return head.next;
+		}
 
+		ListNode temp = head;
+		ListNode cur = head.next;
 
-
-		if(head.val == val) return head.next;
-		ListNode pre = head, cur = head.next;
-		while(cur != null && cur.val != val) {
-			pre = cur;
+		while (cur != null && cur.val != val) {
+			// 记录当前
+			temp = cur;
+			// 前进一步
 			cur = cur.next;
 		}
-		if(cur != null) pre.next = cur.next;
+		// 相等了，跳出while
+		if (cur != null) {
+			temp.next = cur.next;
+		}
 		return head;
+
 
 	}
 
