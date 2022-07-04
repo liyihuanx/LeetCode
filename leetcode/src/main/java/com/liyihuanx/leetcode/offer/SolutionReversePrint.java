@@ -1,10 +1,7 @@
 package com.liyihuanx.leetcode.offer;
 
 
-import com.liyihuanx.leetcode.ListNode;
-
 import java.util.LinkedList;
-import java.util.Stack;
 
 /**
  * @author liyihuan

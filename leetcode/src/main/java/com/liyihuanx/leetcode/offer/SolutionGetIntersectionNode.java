@@ -1,7 +1,5 @@
 package com.liyihuanx.leetcode.offer;
 
-import com.liyihuanx.leetcode.ListNode;
-
 /**
  * @author liyihuan
  * @date 2022/04/18

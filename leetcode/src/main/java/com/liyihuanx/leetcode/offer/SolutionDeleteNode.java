@@ -1,9 +1,5 @@
 package com.liyihuanx.leetcode.offer;
 
-import com.liyihuanx.leetcode.ListNode;
-
-import java.util.List;
-
 /**
  * @author liyihuan
  * @date 2022/04/02
